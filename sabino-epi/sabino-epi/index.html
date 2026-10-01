@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sabino EPI — Proteção que trabalha</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top">Frete grátis em compras acima de R$ 299 · Parcele em até 12x</div>
+<header><div class="wrap nav">
+  <a class="logo" href="#"><i>S</i><span>Sabino EPI<small>Proteção que trabalha</small></span></a>
+  <button class="cart" id="cart">Carrinho (0)</button>
+</div></header>
+
+<div id="status" class="status" hidden></div>
+<main class="wrap">
+  <div class="hero">
+    <div>
+      <span class="tag">EPI certificado e pronto para entrega</span>
+      <h1>Proteção profissional para quem trabalha de verdade.</h1>
+      <p class="lead">Equipamentos confiáveis para sua equipe, com compra simples e atendimento de quem entende de segurança.</p>
+      <div class="btns"><a class="btn p" href="#produtos">Comprar agora</a><a class="btn" href="#contato">Falar com especialista</a></div>
+      <div class="stats"><div><b>Envio</b>Todo o Brasil</div><div><b>EPI</b>Com número de CA</div><div><b>Pagamento</b>Pix, boleto e cartão</div></div>
+    </div>
+    <div class="art">
+      <svg viewBox="0 0 120 100" fill="#10181f" aria-hidden="true"><path d="M14 68c0-28 20-50 46-50s46 22 46 50z"/><rect x="6" y="68" width="108" height="12" rx="6"/><rect x="52" y="10" width="16" height="30" rx="4" fill="#f5b400" opacity=".0"/></svg>
+      <span>Proteção da cabeça aos pés</span>
+    </div>
+  </div>
+
+  <section>
+    <h2>Compre por proteção</h2><p class="sub">Encontre mais rápido o que sua equipe precisa.</p>
+    <div class="cats">
+      <a class="cat" href="#produtos" data-f="Cabeça"><div class="ic">⛑️</div><b>Cabeça</b><small>Capacetes e jugulares</small></a>
+      <a class="cat" href="#produtos" data-f="Mãos"><div class="ic">🧤</div><b>Mãos</b><small>Luvas de segurança</small></a>
+      <a class="cat" href="#produtos" data-f="Visual"><div class="ic">🥽</div><b>Visual</b><small>Óculos e protetores</small></a>
+      <a class="cat" href="#produtos" data-f="Respiratória"><div class="ic">😷</div><b>Respiratória</b><small>Respiradores e filtros</small></a>
+    </div>
+  </section>
+
+  <section id="produtos">
+    <h2>Produtos em destaque</h2><p class="sub">Compra direta, parcelamento e entrega calculada no pedido.</p>
+    <div class="chips" id="chips"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="trust">
+    <div><b>Entrega nacional</b>Envio seguro para todo o Brasil</div>
+    <div><b>Compra protegida</b>Pagamento em ambiente seguro</div>
+    <div><b>Produtos certificados</b>Consulte o CA em cada produto</div>
+    <div><b>Suporte especializado</b>Ajuda antes e depois da compra</div>
+  </section>
+</main>
+
+<footer id="contato"><div class="wrap">
+  <div><b>Sabino EPI</b>Fornecedora de EPIs e implementações de segurança para empresas e profissionais.<br><br>© 2026 Sabino EPI. Todos os direitos reservados.</div>
+  <div><b>Atendimento</b>Segunda a sexta<br>Atendimento comercial especializado</div>
+  <div><b>Compra segura</b>Pix, boleto e cartões<br>Ambiente protegido</div>
+</div></footer>
+
+<dialog id="dlg">
+  <h2>Seu carrinho</h2>
+  <div id="items"></div>
+  <p id="tot" class="tot"></p>
+  <p id="msg" class="sub"></p>
+  <div class="btns"><button class="btn" id="close">Continuar comprando</button><button class="btn p" id="pay">Finalizar compra</button></div>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
